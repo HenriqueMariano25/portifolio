@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Henrique Mariano</title>
+    <link rel="stylesheet" href="estilo.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#191528]">
+<div
+        class="bg-[#191528] menu-topo px-4 text-gray-100 flex justify-between items-center py-2 fixed top-0 w-full z-20"
+        id="menu-topo">
+    <div>
+        <h1 class="letra-h text-6xl">H</h1>
+    </div>
+    <div class="flex gap-6 text-xl menu-opcoes">
+				<span
+                        onclick="scrollToSection('section1')"
+                        class="cursor-pointer hover:text-[#87c8fd]"
+                ><strong>Henrique Mariano</strong></span
+                >
+        <span
+                onclick="scrollToSection('section2')"
+                class="cursor-pointer hover:text-[#87c8fd]"
+        >Sobre mim</span
+        >
+        <span
+                onclick="scrollToSection('section3')"
+                class="cursor-pointer hover:text-[#87c8fd]"
+        >Projetos</span
+        >
+        <span
+                onclick="scrollToSection('section4')"
+                class="cursor-pointer hover:text-[#87c8fd]"
+        >Contatos</span
+        >
+    </div>
+</div>
+<div class="flex justify-center items-center gap-4 section" id="section1">
+    <div class="w-[300px] h-[300px] rounded-full minha-foto items-center">
+        <img
+                src="imgs/minha-foto-nova.png"
+                alt="minha foto"
+                class="w-[300px] rounded-full"/>
+    </div>
+    <!--    <div class="w-[300px] h-[300px] bg-white rounded-full minha-foto items-center">-->
+    <!--    </div>-->
+    <div class="text-white flex flex-col w-5/12">
+        <span>Olá, meu nome é</span>
+        <span class="meu-nome text-6xl">Henrique Mariano</span>
+        <span class="text-xl"
+        >Sou Analista e Desenvolver de Sistema, com foco principal em desenvolver
+					aplicações Web responsivo para diversos dispositivos. Desenvolvo soluções
+					principalmente com as tecnologias
+					<strong>Vue.js, Node.js e Nuxt.js</strong></span
+        >
+    </div>
+</div>
+<div
+        class="flex justify-center items-center px-4 section bg-gray-900 relative"
+        style="height: calc(100vh)"
+        id="section2">
+    <div
+            class="absolute w-full h-full bg-scroll bg-origin-content bg-no-repeat opacity-10 z-0 bg-red-500 bg-cover"
+            style="background-image: url('imgs/code.png')"></div>
+    <div class="flex flex-col text-3xl text-gray-200 w-10/12 gap-8 z-10 text-start">
+        <div class="flex mb-2">
+            <h1 class="border-b-4 border-gray-200 pb-2 pl-2 pr-[40px]">Sobre mim</h1>
+        </div>
+        <div class="text-xl">
+            <div class="flex text-gray-700 text-2xl">
+                <span class="px-2 py-1 bg-white"><strong>Biografia</strong></span>
+            </div>
+            <div class="ml-2">
+						<span>
+							Aos 15 anos ainda morando em Florianópolis me formei no curso de Programador
+							de Computador pelo Senai - Florianopolis, aonde ao mesmo tempo já trabalhei
+							de Jovem Aprendiz em uma empresa de Desenvolvimento de Sistema. Com esse
+							curso já soube que era essa área que eu queria me formar e trabalhar,
+							criando novos projetos e resolvendo problemas através dos sistemas que eu
+							desenvolveria. Quando fiz 19 iniciei a faculdade de Analise e
+							Desenvolvimento de Sistemas, na qual me formei e atuo na área nos dias
+							atuais.
+						</span>
+            </div>
+        </div>
+        <div class="text-xl">
+            <div class="flex text-gray-700 text-2xl">
+                <span class="px-2 py-1 bg-white"><strong>Formações</strong></span>
+            </div>
+            <div class="ml-2">
+                <ul>
+                    <li>
+                        Aprendizagem Industrial de Programador de Computador -
+                        SENAI(Florianópolis)
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-2">
+						<span
+                        >Tecnólogo de Análise e Desenvolvimento de Sistemas - Candido Mendes(Campos
+							dos Goytacazes)</span
+                        >
+            </div>
+        </div>
+        <div class="text-xl">
+            <div class="flex flex-col text-gray-700 text-2xl gap-2">
+                <div class="flex">
+                    <span class="px-2 py-1 bg-white"><strong>Redes Sociais</strong></span>
+                </div>
+                <div class="flex gap-3">
+                    <div class="flex gap-1 text-white text-xl items-center cada-rede">
+                        <img src="icon/github.svg" alt="" class="w-9 h-9"/>
+                        <div class="rounded px-1 item-cada-rede">
+                            <span>HenriqueMariano25</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 text-white text-xl items-center cada-rede">
+                        <img src="icon/linkedin.svg" alt="" class="w-10 h-10"/>
+                        <div class="rounded px-1 item-cada-rede">
+                            <span>henrique-mariano-silva</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 text-white text-xl items-center cada-rede">
+                        <img src="icon/instagram.svg" alt="" class="w-9 h-9"/>
+                        <div class="rounded px-1 item-cada-rede">
+                            <span>@henrique.silva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+        class="flex justify-center items-center px-4 section"
+        style="height: calc(100vh)"
+        id="section3">
+    <div class="flex flex-col text-3xl text-gray-200 w-11/12 gap-8">
+        <div class="flex">
+            <h1 class="border-b-4 border-gray-200 pb-2 pl-2 pr-[40px]">Projetos</h1>
+        </div>
+        <div class="flex divide-x-2 divide-gray-500">
+            <!--Projeto mostrado-->
+            <div class="w-4/5 flex px-2">
+                <div class="w-full flex flex-col h-full" id="siag">
+                    <div class="flex h-fit bg-slate-300 w-fit">
+                        <span class="px-2 text-lg font-bold  text-gray-900  text-start">SIAG - Sistema Integrado Andrade Gutierrez</span>
+                    </div>
+                    <div>
+                        <div class="text-lg text-start px-1">
+									<span>Solução desenvolvida com o intuito de gerenciar as principais demandas do
+								setor Administrativo e dos demais setores se necessário. Conectado a banco
+								de dados externos dos sistema das Catracas e do RH.</span>
+                        </div>
+                        <div class="flex mt-1.5 gap-2 mb-1.5">
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/vue.svg" alt="" class="w-6 h-6"/><span>Vue</span>
+                            </div>
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/nodejs.svg" alt="" class="w-6 h-6"/><span>Node.js</span>
+                            </div>
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/postgresql.svg" alt="" class="w-6 h-6"/>
+                                <span>
+									Postgresql
+								</span>
+                            </div>
+                        </div>
+                        <div class="flex w-full gap-1">
+                            <div class="w-4/12 h-full justify-center gap-1 flex flex-col">
+                                <img src="imgs/siag-02.png" alt="siag-02" class="p-0.5 bg-white"/>
+                                <img src="imgs/siag-03.png" alt="siag-03" class="p-0.5 bg-white"/>
+                            </div>
+                            <div class="flex bg-white p-1 w-8/12" style="height: calc(100vh - 300px)">
+                                <img src="imgs/siag-01.png" alt="" class="w-full"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col h-full hidden" id="severo">
+                    <div class="flex h-fit bg-slate-300 w-fit">
+                        <span class="px-2 text-lg font-bold  text-gray-900  text-start">SEVERO - Perícia Veicular</span>
+                    </div>
+                    <div>
+                        <div class="text-lg text-start px-1">
+									<span>Solução desenvolvida com o intuito de gerenciar os Laudos Veiculares gerados pela empresa contratante, com opção de imprimir para os seus clientes e também gerir todas parte de entrada e saida de dinheiro.</span>
+                        </div>
+                        <div class="flex mt-1.5 gap-2 mb-1.5">
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/vue.svg" alt="" class="w-6 h-6"/><span>Vue</span>
+                            </div>
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/nodejs.svg" alt="" class="w-6 h-6"/><span>Node.js</span>
+                            </div>
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/postgresql.svg" alt="" class="w-6 h-6"/>
+                                <span>
+									Postgresql
+								</span>
+                            </div>
+                        </div>
+                        <div class="flex w-full gap-1">
+                            <div class="w-4/12 h-full justify-center gap-1 flex flex-col">
+                                <img src="imgs/severo-02.png" alt="severo-02" class="p-0.5 bg-white"/>
+                                <img src="imgs/severo-03.png" alt="severo-03" class="p-0.5 bg-white"/>
+                            </div>
+                            <div class="flex bg-white p-1 w-8/12" style="height: calc(100vh - 300px)">
+                                <img src="imgs/severo-01.png" alt="" class="w-full"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col h-full hidden" id="gimoveis">
+                    <div class="flex h-fit bg-slate-300 w-fit">
+                        <span class="px-2 text-lg font-bold  text-gray-900  text-start">GImóveis - Gestão de Imóvieis</span>
+                    </div>
+                    <div>
+                        <div class="text-lg text-start px-1">
+                            <span>Solução desenvolvida com o intuito de gerenciar os imóveis, alugueis, contratos e alugueis dos clientes do contratante. Também auxilixando no controle do caixa com as despesas e entradas de valores. </span>
+                        </div>
+                        <div class="flex mt-1.5 gap-2 mb-1.5">
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/vue.svg" alt="" class="w-6 h-6"/><span>Vue</span>
+                            </div>
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/nodejs.svg" alt="" class="w-6 h-6"/><span>Node.js</span>
+                            </div>
+                            <div class="text-xl items-center gap-1 px-1 rounded flex">
+                                <img src="icon/postgresql.svg" alt="" class="w-6 h-6"/>
+                                <span>
+									Postgresql
+								</span>
+                            </div>
+                        </div>
+                        <div class="flex w-full gap-1">
+                            <div class="w-4/12 h-full justify-center gap-1 flex flex-col">
+                                <img src="imgs/gimoveis-02.png" alt="severo-02" class="p-0.5 bg-white"/>
+                                <img src="imgs/gimoveis-03.png" alt="severo-03" class="p-0.5 bg-white"/>
+                            </div>
+                            <div class="flex bg-white p-1 w-8/12" style="height: calc(100vh - 300px)">
+                                <img src="imgs/gimoveis-01.png" alt="" class="w-full"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Lista de projetos-->
+            <div class="w-1/5  h-full flex pl-2 flex flex-col gap-2">
+                <div class="flex text-lg">
+                    <span class="px-2 text-lg font-bold text-slate-200 text-start">OUTROS PROJETOS</span>
+                </div>
+                <div class="bg-blue-500/30 w-full flex flex-col cursor-pointer" id="mini-severo">
+                    <img src="imgs/severo-01.png" alt="" class="w-full" >
+                    <div class="bg-black/85 -mt-[46px] py-2 text-center text-lg font-bold border-t-2 border-black">
+                        <span>SEVERO - PERÍCIA VEICULAR</span>
+                    </div>
+                </div>
+                <div class="bg-blue-500/30 w-full flex flex-col cursor-pointer" id="mini-gimoveis">
+                    <img src="imgs/gimoveis-01.png" alt="" class="w-full">
+                    <div class="bg-black/85 -mt-[46px] py-2 text-center text-lg font-bold border-t-2 border-black">
+                        <span>GÍMOVEIS</span>
+                    </div>
+                </div>
+                <div class="bg-blue-500/30 w-full flex flex-col cursor-pointer hidden" id="mini-siag">
+                    <img src="imgs/siag-01.png" alt="" class="w-full">
+                    <div class="bg-black/85 -mt-[46px] py-2 text-center text-lg font-bold border-t-2 border-black">
+                        <span>SIAG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap-1 flex flex-col hidden">
+            <div class="grid grid-cols-2 gap-2 divide-x-2 divide-gray-100">
+                <div class="flex flex-col gap-2">
+                    <div class="flex bg-white p-2">
+                        <img src="imgs/siag-01-antigo.png" alt="" class=""/>
+                    </div>
+                    <div class="grid grid-cols-2 flex gap-2">
+                        <img src="imgs/siag-02.png" alt="siag-02" class="p-1 bg-white"/>
+                        <img src="imgs/siag-03.png" alt="siag-03" class="p-1 bg-white"/>
+                    </div>
+                </div>
+                <div class="pl-2 flex flex-col">
+                    <div class="flex text-gray-700 text-2xl">
+                        <span class="px-2 py-1 bg-white"><strong>SIAG</strong></span>
+                    </div>
+                    <span class="px-2 py-1 text-xl mt-1"><strong> ▸ DESCRIÇÃO</strong></span>
+                    <span class="text-lg"
+                    >Solução desenvolvida com o intuito de gerenciar as principais demandas do
+								setor Administrativo e dos demais setores se necessário. Conectado a banco
+								de dados externos dos sistema das Catracas e do RH.</span
+                    >
+                    <span class="text-lg"
+                    >Os módulos desenvolvidos durante o processo de desenvolvimento foram,
+								Controle dos Funcionários, Agendamento de Hora Extra, Gestão de Rotas,
+								Acompanhamento das Contratações, Solicitação de Serviço, entre
+								outros.</span
+                    >
+                    <div class="flex mt-2 gap-2">
+                        <div
+                                class="text-xl items-center gap-1 px-1 rounded border-2 border-gray-100 flex">
+                            <img src="icon/vue.svg" alt="" class="w-6 h-6"/><span>Vue</span>
+                        </div>
+                        <div
+                                class="text-xl items-center gap-1 px-1 rounded border-2 border-gray-100 flex">
+                            <img src="icon/nodejs.svg" alt="" class="w-6 h-6"/><span>Node.js</span>
+                        </div>
+                        <div
+                                class="text-xl items-center gap-1 px-1 rounded border-2 border-gray-100 flex">
+                            <img src="icon/postgresql.svg" alt="" class="w-6 h-6"/><span
+                        >Postgresql</span
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+        class="flex justify-center items-center px-4 section bg-gray-100 text-gray-800"
+        style="height: calc(100vh)"
+        id="section4">
+    <div class="flex flex-col text-3xl text-gray-900 w-10/12 gap-8">
+        <div class="flex mb-2">
+            <h1 class="border-b-4 border-gray-800 pb-2 pl-2 pr-[40px]">Contatos</h1>
+        </div>
+        <div class="flex">
+            <!--            <div class="flex w-6/12">-->
+            <!--                <form action="" class="w-full text-white">-->
+            <!--                    <div class="flex flex-col w-full">-->
+            <!--                        <label for="nome">NOME</label>-->
+            <!--                        <input type="text" id="nome" name="nome" placeholder="Ex: Henrique Mariano" class="input">-->
+            <!--                    </div>-->
+
+            <!--                    <div class="flex flex-col mt-2">-->
+            <!--                        <label for="email">E-MAIL</label>-->
+            <!--                        <input type="text" id="email" name="email" placeholder="Ex: henrique.mariano25@hotmail.com" class="input">-->
+            <!--                    </div>-->
+
+            <!--                    <div class="flex flex-col mt-2">-->
+            <!--                        <label for="mensagem">MENSAGEM</label>-->
+            <!--                        <textarea id="mensagem" name="mensagem"-->
+            <!--                                  class="input"></textarea>-->
+            <!--                    </div>-->
+            <!--                    <button class="btn-enviar">ENVIAR</button>-->
+            <!--                </form>-->
+            <!--            </div>-->
+            <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-2">
+                    <img src="icon/email.svg" alt="" class="w-12 h-12"/>
+                    <span>E-mail: <strong>henrique.mariano25@hotmail.com</strong></span>
+                </div>
+                <div class="flex items-center gap-3 ml-1">
+                    <img src="icon/whatsapp.svg" alt="" class="w-10 h-10"/>
+                    <span>Celular: <strong>(22) 99237-6913</strong></span>
+                </div>
+                <a
+                        href="https://github.com/HenriqueMariano25"
+                        class="flex items-center gap-3 ml-1 text link">
+                    <img src="icon/github-azul.svg" alt="" class="w-10 h-10"/>
+                    <span>GitHub: <strong>HenriqueMariano25</strong></span>
+                </a>
+                <a
+                        href="https://www.linkedin.com/in/henrique-mariano-silva/"
+                        class="flex items-center gap-2 text link">
+                    <img src="icon/linkedin-azul.svg" alt="" class="w-12 h-12"/>
+                    <span>LinkedIn: <strong>henrique-mariano-silva</strong></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

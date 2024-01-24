@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Preahvihear&display=swap');
+
+/*<style>*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.letra-h{
+    font-family: 'Carter One', cursive;
+
+}
+
+.menu-opcoes{
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.meu-nome {
+    font-family: 'Carter One', cursive;
+}
+
+.projeto{
+    width: 90vw ;
+    /*background-color: white;*/
+}
+
+.img-projeto{
+    width: 65%;
+    /*background-color: red;*/
+    /*height: 60%;*/
+}
+
+.mini-img-projeto{
+    /*width: 35%;*/
+}
+
+.cada-rede{
+    cursor: pointer;
+}
+
+.cada-rede:hover .item-cada-rede{
+    background-color: ghostwhite;
+    color: black;
+}
+
+.input{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    border: 2px solid #969696;
+    color: #171717
+}
+
+.btn-enviar{
+    background-color: #87c8fd;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid #57affc;
+    color: black;
+}
+.btn-enviar:hover{
+    background-color: #5eb3fa;
+}
+
+.link:hover{
+    color: #87c8fd;
+}
+/*menu-topo{*/
+/*    background-color: red;*/
+/*}*/
+/*</style>*/
+
+#menu-topo{
+    transition-duration: 0.1s;
+}
+
+#menu-topo.scrolled {
+    /*background-color: #0d0725;*/
+    border-bottom: 3px solid white;
+}
+
+#menu-topo.scrolled a {
+    /*color: #fff;*/
+}
