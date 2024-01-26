@@ -94,3 +94,9 @@ body{
 #menu-topo.scrolled a {
     /*color: #fff;*/
 }
+
+@media (min-width: 600px) {
+    /*.section2 {*/
+    /*    height: 100vh;*/
+    /*}*/
+}
